@@ -1,23 +1,16 @@
 # Light Reborn
 
-A personal journal of quotes and reflections, documented with dates, one file per entry.
+A private journal of quotes and reflections, with one dated Markdown file per entry.
 
 ## Adding an entry
 
-Create a Markdown file in `entries/` named `YYYY-MM-DD-short-title.md`. Use the date of the entry; different titles allow multiple entries on the same day.
+Follow `AGENTS.md` and copy `ENTRY_TEMPLATE.md` into `entries/YYYY-MM-DD-short-title.md`.
 
-Start each file with a title and an explicit date:
+- Ask for the entry name unless the user has already supplied it.
+- Include the title, date in `YYYY-MM-DD` format, and an explicit author.
+- Default to `OROGLORIEUS` unless another author is specified.
+- Keep the entry body to 1–300 words, with correct grammar and consistent Markdown formatting.
+- Use paragraphs for reflections and blockquotes for quotations; get approval before changing supplied quotations.
+- Ask for approval before auto-committing each entry or batch, and obtain explicit permission before pushing.
 
-```markdown
-# Your title
-
-Date: YYYY-MM-DD
-
-Your reflection, or:
-
-> Your quote.
-
-— Author or source, if known
-```
-
-Keep quoted words distinct from your own reflections, and include the source when known. Use the language and length that suit the entry.
+Use the date supplied by the user, or the current local date for a new entry. Never overwrite an existing entry when creating a new one.
